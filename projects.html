@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Md Abdullah | Projects</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* NAVBAR (Match with other pages) */
+    nav {
+      background: #020617;
+      padding: 14px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav a {
+      color: #e5e7eb;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover,
+    nav a.active {
+      color: #38bdf8;
+      border-bottom: 2px solid #38bdf8;
+      padding-bottom: 4px;
+    }
+
+    /* HEADER */
+    header {
+      background: linear-gradient(135deg, #0f172a, #020617);
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.6rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 10px;
+      color: #cbd5f5;
+      font-size: 1.05rem;
+    }
+
+    /* SECTION */
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    h2 {
+      color: #0f172a;
+      border-bottom: 2px solid #38bdf8;
+      display: inline-block;
+      margin-bottom: 25px;
+    }
+
+    /* PROJECT CARDS */
+    .project-card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+      margin-bottom: 25px;
+      border-left: 4px solid #38bdf8;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 26px rgba(0,0,0,0.12);
+    }
+
+    .project-card h3 {
+      margin-top: 0;
+      margin-bottom: 8px;
+      color: #0f172a;
+    }
+
+    .project-card .tech {
+      display: inline-block;
+      margin-bottom: 10px;
+      padding: 4px 10px;
+      background: #e0f2fe;
+      color: #0369a1;
+      border-radius: 15px;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .project-card span.period {
+      display: block;
+      font-size: 0.9rem;
+      color: #64748b;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: #020617;
+      color: #cbd5f5;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      nav a { margin: 0 8px; font-size: 14px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="education.html">Education</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html" class="active">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Projects</h1>
+    <p>Software Development Projects (Academic & Personal)</p>
+  </header>
+
+  <!-- PROJECTS SECTION -->
+  <section>
+    <div class="project-card">
+      <h3>Library Management System</h3>
+      <div class="tech">PHP</div>
+      <div class="tech">HTML</div>
+      <div class="tech">CSS</div>
+      <p>Developed a system to manage book inventories, user registrations, and book checkouts.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>HealthCare Android App</h3>
+      <div class="tech">Java</div>
+      <p>Created an app featuring BMI calculators, health articles, doctor appointments, and pathology test bookings.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Django E-Commerce Website</h3>
+      <div class="tech">Django</div>
+      <div class="tech">HTML</div>
+      <div class="tech">CSS</div>
+      <div class="tech">Bootstrap</div>
+      <p>Built a fully functional e-commerce platform with user authentication, product listings, and checkout features.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Mango Leaf Disease Recognition</h3>
+      <div class="tech">ResNet50</div>
+      <div class="tech">Random Forest</div>
+      <p>Collected a custom dataset and trained deep-learning and ML models to classify mango leaf diseases.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>MediCare Android App</h3>
+      <div class="tech">Java</div>
+      <div class="tech">OOP</div>
+      <p>Developed a doctor appointment app following object-oriented principles, featuring appointment booking, scheduling, and essential validations.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Customer Churn Prediction</h3>
+      <div class="tech">Machine Learning</div>
+      <p>Built an ML model using a Kaggle dataset to predict customer churn, applying KNN, TabNet, and Logistic Regression with preprocessing and performance evaluation.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Md Abdullah | Built with HTML & CSS</p>
+  </footer>
+
+</body>
+</html>

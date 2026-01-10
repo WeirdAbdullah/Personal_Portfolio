@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Md Abdullah | Contact</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* NAVBAR */
+    nav {
+      background: #020617;
+      padding: 14px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav a {
+      color: #e5e7eb;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover,
+    nav a.active {
+      color: #38bdf8;
+      border-bottom: 2px solid #38bdf8;
+      padding-bottom: 4px;
+    }
+
+    /* HEADER */
+    header {
+      background: linear-gradient(135deg, #0f172a, #020617);
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.6rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 10px;
+      color: #cbd5f5;
+      font-size: 1.05rem;
+    }
+
+    /* SECTION */
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+
+    /* CONTACT INFO */
+    .info-card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+      border-left: 4px solid #38bdf8;
+    }
+
+    .info-card h2 {
+      margin-top: 0;
+      color: #0f172a;
+    }
+
+    .info-item {
+      margin-bottom: 15px;
+    }
+
+    .info-item span {
+      font-weight: bold;
+      color: #0f172a;
+    }
+
+    .info-item a {
+      color: #0369a1;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* CONTACT FORM */
+    .form-card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+      border-left: 4px solid #38bdf8;
+    }
+
+    .form-card h2 {
+      margin-top: 0;
+      color: #0f172a;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #cbd5f5;
+      border-radius: 6px;
+      font-size: 14px;
+      font-family: Arial, sans-serif;
+    }
+
+    form input:focus,
+    form textarea:focus {
+      outline: none;
+      border-color: #38bdf8;
+      box-shadow: 0 0 0 2px rgba(56,189,248,0.2);
+    }
+
+    form textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .btn-submit {
+      background: #38bdf8;
+      color: #020617;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-size: 15px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .btn-submit:hover {
+      background: #0ea5e9;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #020617;
+      color: #cbd5f5;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 700px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+      header h1 {
+        font-size: 2rem;
+      }
+      nav a {
+        margin: 0 8px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="education.html">Education</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Contact Me</h1>
+    <p>Let’s connect and discuss opportunities</p>
+  </header>
+
+  <!-- CONTACT SECTION -->
+  <section>
+    <div class="contact-grid">
+
+      <!-- CONTACT INFO -->
+      <div class="info-card">
+        <h2>Contact Information</h2>
+
+        <div class="info-item">
+          <span>Name:</span> Md Abdullah
+        </div>
+
+        <div class="info-item">
+          <span>Email:</span>
+          <a href="mailto:weirdabdullah4@gmail.com">Abdullah Al Mamun</a>
+        </div>
+
+        <div class="info-item">
+          <span>University:</span> BAUST, Saidpur
+        </div>
+
+        <div class="info-item">
+          <span>GitHub:</span>
+          <a href="https://github.com/WeirdAbdullah" target="_blank">
+            Abdullah
+          </a>
+        </div>
+
+        <div class="info-item">
+          <span>LinkedIn:</span>
+          <a href="https://www.linkedin.com/in/md-abdullah-53b35a2a7/" target="_blank">
+            linkedin.com/in/yourprofile
+          </a>
+        </div>
+      </div>
+
+      <!-- CONTACT FORM -->
+      <div class="form-card">
+        <h2>Send a Message</h2>
+
+        <form>
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Md Abdullah | Built with HTML & CSS</p>
+  </footer>
+
+</body>
+</html>
